@@ -45,7 +45,7 @@ Debut En-tête
 }
 
 .PageHome .EnteteMenu li{
-  padding: 0 5px 0 5px;
+  padding: 0 15px 0 15px;
   list-style: none;
 }
 
@@ -107,6 +107,16 @@ Debut footer
 .PageHome footer {
 margin: 50px 50px 10px 50px;
 
+}
+
+.PageHome footer button {
+  margin: 0 10px 0 10px;
+  padding: 7px 10px 7px 10px;
+  border-radius: 10px;
+}
+
+.PageHome footer .btnContact{
+  padding: 7px 23px 7px 23px;
 }
 /*
 Fin footer
