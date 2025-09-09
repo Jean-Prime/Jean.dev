@@ -1,12 +1,3 @@
-/*
-
-
-Page          :        Accuril      ///////////////////////////////////////////////
-
-
-
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -25,31 +16,39 @@ body {
 /*
 
 
+Page          :        Home     ///////////////////////////////////////////////
+
+
+
+*/
+
+/*
+
+
 
 
 Debut En-tête 
 */
 
-.PageHome header{
+.PageHome header {
   margin: 10px 50px 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
-.PageHome .EnteteMenu{
+.PageHome .EnteteMenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.PageHome .EnteteMenu li{
+.PageHome .EnteteMenu li {
   padding: 0 15px 0 15px;
   list-style: none;
 }
 
-.PageHome .EnteteMenu a{
+.PageHome .EnteteMenu a {
   text-decoration: none;
 }
 /*
@@ -61,6 +60,118 @@ Fin En_tête
 
 */
 
+/*
+
+
+
+
+
+Debut main
+*/
+
+.PageHome main {
+  margin: 200px 50px 10px 50px;
+}
+
+.PageHome .web,
+.domaine {
+  font-size: 50px;
+}
+
+.PageHome .developer {
+  font-size: 50px;
+}
+
+.PageHome .network{
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+}
+/*
+Fin main
+
+
+
+
+
+*/
+
+/*
+
+
+
+
+
+Debut footer
+*/
+
+.PageHome footer {
+  margin: 10px 50px 10px 50px;
+}
+
+.PageHome footer button {
+  margin: 0 15px 0 0;
+  padding: 7px 10px 7px 10px;
+  border-radius: 6px;
+}
+
+.PageHome footer .btnContact {
+  padding: 7px 23px 7px 23px;
+}
+/*
+Fin footer
+
+
+
+
+
+*/
+
+/*
+
+
+Page          :        About      ///////////////////////////////////////////////
+
+
+
+*/
+
+/*
+
+
+
+
+Debut En-tête 
+*/
+
+.PageAbout header {
+  margin: 10px 50px 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PageAbout .EnteteMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PageAbout .EnteteMenu li {
+  padding: 0 15px 0 15px;
+  list-style: none;
+}
+
+.PageAbout .EnteteMenu a {
+  text-decoration: none;
+}
+/*
+Fin En_tête
+
+
+
+
+
+*/
 
 /*
 
@@ -71,16 +182,16 @@ Fin En_tête
 Debut main
 */
 
-.PageHome main{
-margin: 200px 50px 10px 50px;
+.PageAbout main {
+  margin: 200px 50px 10px 50px;
 }
 
-.PageHome .iam, .domaine{
+.PageAbout .iam,
+.domaine {
   font-size: 30px;
 }
 
-
-.PageHome .name{
+.PageAbout .name {
   font-size: 50px;
 }
 
@@ -93,7 +204,6 @@ Fin main
 
 */
 
-
 /*
 
 
@@ -103,19 +213,17 @@ Fin main
 Debut footer
 */
 
-
-.PageHome footer {
-margin: 50px 50px 10px 50px;
-
+.PageAbout footer {
+  margin: 50px 50px 10px 50px;
 }
 
-.PageHome footer button {
+.PageAbout footer button {
   margin: 0 10px 0 10px;
   padding: 7px 10px 7px 10px;
   border-radius: 10px;
 }
 
-.PageHome footer .btnContact{
+.PageAbout footer .btnContact {
   padding: 7px 23px 7px 23px;
 }
 /*
@@ -126,6 +234,3 @@ Fin footer
 
 
 */
-
-
-
