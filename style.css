@@ -13,6 +13,11 @@ body {
   background-color: ;
 }
 
+.EnteteMenu,
+.menuContact button {
+  font-size: 13px;
+}
+
 /*
 
 
@@ -37,6 +42,14 @@ Debut En-tête
   align-items: center;
 }
 
+.PageHome header h1 {
+  font-size: 30px;
+}
+
+.PageHome header h1 span {
+  font-size: 19px;
+}
+
 .PageHome .EnteteMenu {
   display: flex;
   justify-content: space-between;
@@ -44,7 +57,8 @@ Debut En-tête
 }
 
 .PageHome .EnteteMenu li {
-  padding: 0 15px 0 15px;
+  margin: 0 10px 0 15px;
+  padding: 0 10px 0 10px;
   list-style: none;
 }
 
@@ -73,19 +87,37 @@ Debut main
   margin: 200px 50px 10px 50px;
 }
 
-.PageHome .web,
+.PageHome main .web,
 .domaine {
   font-size: 50px;
+  line-height: 30px;
 }
 
-.PageHome .developer {
+.PageHome main .developer {
   font-size: 50px;
 }
 
-.PageHome .network{
-  font-size: 16px;
-  margin: 10px 0 10px 0;
+.PageHome main .network {
+  font-size: 20px;
+  margin: 20px 0 20px 0;
 }
+
+.PageHome main .info {
+  font-size: 15px;
+  width: 40%;
+  text-align: justify;
+}
+
+.PageHome main button {
+  margin: 10px 15px 10px 0;
+  padding: 7px 10px 7px 10px;
+  border-radius: 6px;
+}
+
+.PageHome main .btnContact {
+  padding: 7px 23px 7px 23px;
+}
+
 /*
 Fin main
 
@@ -108,15 +140,6 @@ Debut footer
   margin: 10px 50px 10px 50px;
 }
 
-.PageHome footer button {
-  margin: 0 15px 0 0;
-  padding: 7px 10px 7px 10px;
-  border-radius: 6px;
-}
-
-.PageHome footer .btnContact {
-  padding: 7px 23px 7px 23px;
-}
 /*
 Fin footer
 
@@ -142,12 +165,19 @@ Page          :        About      //////////////////////////////////////////////
 
 Debut En-tête 
 */
-
 .PageAbout header {
   margin: 10px 50px 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.PageAbout header h1 {
+  font-size: 30px;
+}
+
+.PageAbout header h1 span {
+  font-size: 19px;
 }
 
 .PageAbout .EnteteMenu {
@@ -157,7 +187,8 @@ Debut En-tête
 }
 
 .PageAbout .EnteteMenu li {
-  padding: 0 15px 0 15px;
+  margin: 0 10px 0 15px;
+  padding: 0 10px 0 10px;
   list-style: none;
 }
 
