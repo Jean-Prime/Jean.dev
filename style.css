@@ -27,10 +27,31 @@ body {
 
 
 
-En-tête 
+Debut En-tête 
 */
 
+.PageHome header{
+  margin: 10px 50px 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+
+.PageHome .EnteteMenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PageHome .EnteteMenu li{
+  padding: 0 5px 0 5px;
+  list-style: none;
+}
+
+.PageHome .EnteteMenu a{
+  text-decoration: none;
+}
 /*
 Fin En_tête
 
@@ -39,3 +60,62 @@ Fin En_tête
 
 
 */
+
+
+/*
+
+
+
+
+
+Debut main
+*/
+
+.PageHome main{
+margin: 200px 50px 10px 50px;
+}
+
+.PageHome .iam, .domaine{
+  font-size: 30px;
+}
+
+
+.PageHome .name{
+  font-size: 50px;
+}
+
+/*
+Fin main
+
+
+
+
+
+*/
+
+
+/*
+
+
+
+
+
+Debut footer
+*/
+
+
+.PageHome footer {
+margin: 50px 50px 10px 50px;
+
+}
+/*
+Fin footer
+
+
+
+
+
+*/
+
+
+
