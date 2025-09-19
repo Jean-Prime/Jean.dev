@@ -3,6 +3,7 @@
   --second-color: #2f2f2f;
   --third-color: #f6f6f6;
   --fourth-color: #ffcb74;
+  --fiveth-color: #b4883b;
 }
 
 * {
@@ -42,7 +43,7 @@ Debut En-tête
 */
 
 .PageHome header {
-  margin: 10px 50px 10px 50px;
+  margin: 10px 30px 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +64,7 @@ Debut En-tête
 }
 
 .PageHome .EnteteMenu li {
-  margin: 0 10px 0 15px;
+  margin: 0 15px 0 15px;
   padding: 0 10px 0 10px;
   list-style: none;
 }
@@ -72,6 +73,7 @@ Debut En-tête
   text-decoration: none;
   padding: 0 4px 4px 4px;
   color: var(--third-color);
+  font-family: "Times New Roman", Times, serif;
 }
 
 .PageHome header .titreEntete span {
@@ -81,6 +83,14 @@ Debut En-tête
 .PageHome header .EnteteMenu .menuHome a {
   color: var(--fourth-color);
   border-bottom: 2px solid var(--fourth-color);
+}
+
+.PageHome header .EnteteMenu .menuContact button {
+  color: var(--third-color);
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+  background-color: var(--first-color);
+  border: 2px solid var(--third-color);
 }
 
 /*
@@ -106,25 +116,37 @@ Debut main
 }
 
 .PageHome main .ready button {
+  color: var(--fourth-color);
+  background-color: var(--first-color);
+  box-shadow: 0 0 100px var(--fourth-color);
+  border: none;
+}
+
+.PageHome main .ready button {
   margin: 10px 15px 20px 0;
   padding: 7px 10px 7px 10px;
   border-radius: 100px;
 }
 
 .PageHome main .language button {
-  margin: 10px 15px 10px 0;
+  margin: 15px 15px 10px 0;
   padding: 7px 10px 7px 10px;
   border-radius: 100px;
+  color: var(--third-color);
+  background-color: var(--second-color);
+  border: none;
+  box-shadow: 0 0 1px var(--third-color);
 }
 
 .PageHome main .web,
-.domaine {
+.developer {
   font-size: 50px;
-  line-height: 30px;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .PageHome main .developer {
-  font-size: 50px;
+  color: var(--fourth-color);
 }
 
 .PageHome main .network {
@@ -138,16 +160,14 @@ Debut main
   text-align: justify;
 }
 
-.PageHome main .language button {
-  margin: 10px 15px 10px 0;
-  padding: 7px 10px 7px 10px;
-  border-radius: 100px;
-}
-
 .PageHome main .btnHome button {
   margin: 10px 15px 10px 0;
   padding: 7px 10px 7px 10px;
   border-radius: 6px;
+  background-color: var(--first-color);
+  color: var(--third-color);
+  border: none;
+  box-shadow: 0 17px 50px var(--fourth-color);
 }
 
 .PageHome main .btnHome .btnContact {
@@ -202,7 +222,7 @@ Page          :        About      //////////////////////////////////////////////
 Debut En-tête 
 */
 .PageAbout header {
-  margin: 10px 50px 10px 50px;
+  margin: 10px 30px 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,7 +243,7 @@ Debut En-tête
 }
 
 .PageAbout .EnteteMenu li {
-  margin: 0 10px 0 15px;
+  margin: 0 15px 0 15px;
   padding: 0 10px 0 10px;
   list-style: none;
 }
@@ -232,6 +252,7 @@ Debut En-tête
   text-decoration: none;
   padding: 0 4px 4px 4px;
   color: var(--third-color);
+  font-family: "Times New Roman", Times, serif;
 }
 
 .PageAbout header .titreEntete span {
@@ -243,13 +264,12 @@ Debut En-tête
   border-bottom: 2px solid var(--fourth-color);
 }
 
-.PageHome header .titreEntete span {
+.PageAbout header .EnteteMenu .menuContact button {
   color: var(--third-color);
-}
-
-.PageHome header .EnteteMenu .menuHome a {
-  color: var(--fourth-color);
-  border-bottom: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+  background-color: var(--first-color);
+  border: 2px solid var(--third-color);
 }
 
 /*
@@ -279,18 +299,26 @@ Debut main
   margin: 0 0 50px 0;
 }
 
-.PageAbout .iam,
-.domaine {
+.PageAbout main .maintitre h1 {
+  color: var(--fourth-color);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.PageAbout main .iam {
+  color: var(--fourth-color);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
 }
 
 .PageAbout .name {
-  font-size: 50px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .PageAbout .domaine {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 10px 0 0 0;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 20px;
   text-align: justify;
   width: 40%;
@@ -300,10 +328,19 @@ Debut main
   margin: 12px 10px 0 0;
   padding: 7px 10px 7px 10px;
   border-radius: 10px;
+  border: 1px solid var(--fourth-color);
+}
+
+.PageAbout .btnabout .btnDownload {
+  color: var(--third-color);
+  background-color: var(--fiveth-color);
 }
 
 .PageAbout .btnabout .btnContact {
   padding: 7px 23px 7px 23px;
+
+  color: var(--fourth-color);
+  background-color: var(--first-color);
 }
 
 /*
@@ -327,7 +364,7 @@ Debut section
 .PageAbout section {
   display: flex;
   justify-content: space-between;
-  margin: 20px 80px 0 45px;
+  margin: 20px 45px 0 45px;
 }
 
 .PageAbout section .tprojet,
@@ -337,6 +374,7 @@ Debut section
   width: 30%;
   border: 2px solid black;
   border-radius: 10px;
+  background-color: var(--second-color);
 }
 
 .PageAbout section div div {
@@ -354,7 +392,7 @@ Debut section
 }
 
 .PageAbout section .number .ico {
-  background-color: var(--second-color);
+  background-color: var(--first-color);
   padding: 12px;
 
   border-radius: 100px;
@@ -398,3 +436,5 @@ Fin footer
 
 
 */
+
+
