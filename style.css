@@ -15,7 +15,6 @@
 
 body {
   box-sizing: border-box;
-  min-width: 100vh;
   background-color: var(--first-color);
   color: var(--third-color);
 }
@@ -23,6 +22,60 @@ body {
 .EnteteMenu,
 .menuContact button {
   font-size: 13px;
+}
+
+header {
+  margin: 10px 30px 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+header h1 span {
+  font-size: 19px;
+}
+
+.EnteteMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.EnteteMenu li {
+  margin: 0 15px 0 15px;
+  padding: 0 10px 0 10px;
+  list-style: none;
+}
+
+.EnteteMenu a {
+  text-decoration: none;
+  padding: 0 4px 4px 4px;
+  color: var(--third-color);
+  font-family: "Times New Roman", Times, serif;
+}
+
+header .titreEntete span {
+  color: var(--fourth-color);
+}
+
+header .EnteteMenu .menuContact button {
+  color: var(--third-color);
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+  background-color: var(--first-color);
+  border: 2px solid var(--third-color);
+}
+
+header .divcontact {
+  display: none;
 }
 
 /*
@@ -42,55 +95,9 @@ Page          :        Home     ///////////////////////////////////////////////
 Debut En-tête 
 */
 
-.PageHome header {
-  margin: 10px 30px 10px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.PageHome header h1 {
-  font-size: 30px;
-}
-
-.PageHome header h1 span {
-  font-size: 19px;
-}
-
-.PageHome .EnteteMenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.PageHome .EnteteMenu li {
-  margin: 0 15px 0 15px;
-  padding: 0 10px 0 10px;
-  list-style: none;
-}
-
-.PageHome .EnteteMenu a {
-  text-decoration: none;
-  padding: 0 4px 4px 4px;
-  color: var(--third-color);
-  font-family: "Times New Roman", Times, serif;
-}
-
-.PageHome header .titreEntete span {
-  color: var(--fourth-color);
-}
-
 .PageHome header .EnteteMenu .menuHome a {
   color: var(--fourth-color);
   border-bottom: 2px solid var(--fourth-color);
-}
-
-.PageHome header .EnteteMenu .menuContact button {
-  color: var(--third-color);
-  padding: 5px 10px 5px 10px;
-  border-radius: 100px;
-  background-color: var(--first-color);
-  border: 2px solid var(--third-color);
 }
 
 /*
@@ -221,55 +228,10 @@ Page          :        About      //////////////////////////////////////////////
 
 Debut En-tête 
 */
-.PageAbout header {
-  margin: 10px 30px 10px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.PageAbout header h1 {
-  font-size: 30px;
-}
-
-.PageAbout header h1 span {
-  font-size: 19px;
-}
-
-.PageAbout .EnteteMenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.PageAbout .EnteteMenu li {
-  margin: 0 15px 0 15px;
-  padding: 0 10px 0 10px;
-  list-style: none;
-}
-
-.PageAbout .EnteteMenu a {
-  text-decoration: none;
-  padding: 0 4px 4px 4px;
-  color: var(--third-color);
-  font-family: "Times New Roman", Times, serif;
-}
-
-.PageAbout header .titreEntete span {
-  color: var(--fourth-color);
-}
 
 .PageAbout header .EnteteMenu .menuAbout a {
   color: var(--fourth-color);
   border-bottom: 2px solid var(--fourth-color);
-}
-
-.PageAbout header .EnteteMenu .menuContact button {
-  color: var(--third-color);
-  padding: 5px 10px 5px 10px;
-  border-radius: 100px;
-  background-color: var(--first-color);
-  border: 2px solid var(--third-color);
 }
 
 /*
@@ -437,4 +399,438 @@ Fin footer
 
 */
 
+@media all and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    scrollbar-width: none;
+  }
 
+  body {
+    box-sizing: border-box;
+    background-color: var(--first-color);
+    color: var(--third-color);
+  }
+
+  .EnteteMenu,
+  .menuContact button {
+    font-size: 13px;
+  }
+
+  header {
+    margin: 10px 10px 0px 10px;
+    display: inline;
+  }
+
+  header .menuEN {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+
+    padding: 10px 5px 0 5px;
+    position: fixed;
+    background-color: var(--first-color);
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header h1 span {
+    font-size: 19px;
+  }
+
+  .EnteteMenu {
+    display: block;
+    margin: 50px 0px 0px 0px;
+  }
+
+  header .divcontact {
+    display: inline;
+  }
+
+  header .EnteteMenu .menuContact {
+    display: none;
+  }
+
+  .EnteteMenu .menuHome,
+  .EnteteMenu .menuAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid var(--second-color);
+
+    list-style: none;
+  }
+
+  .EnteteMenu a {
+    text-decoration: none;
+    padding: 5px 180px 5px 180px;
+    color: var(--third-color);
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  header .titreEntete span {
+    color: var(--fourth-color);
+  }
+
+  header .EnteteMenu .menuContact button,
+  .divcontact button {
+    color: var(--third-color);
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+    background-color: var(--first-color);
+    border: 2px solid var(--third-color);
+  }
+
+  /*
+
+
+Page          :        Home     ///////////////////////////////////////////////
+
+
+
+*/
+
+  /*
+
+
+
+
+Debut En-tête 
+*/
+
+  .PageHome header .EnteteMenu .menuHome {
+    color: var(--fourth-color);
+    border-bottom: 1px solid var(--fourth-color);
+    background-color: var(--second-color);
+  }
+
+  .PageHome header .EnteteMenu .menuHome a {
+    border: none;
+  }
+
+  /*
+Fin En_tête
+
+
+
+
+
+*/
+
+  /*
+
+
+
+
+
+Debut main
+*/
+
+  .PageHome main {
+    margin: 25px 5px 10px 15px;
+  }
+
+  .PageHome main .ready button {
+    color: var(--fourth-color);
+    background-color: var(--first-color);
+    box-shadow: 0 0 100px var(--fourth-color);
+    border: none;
+
+    margin: 0px 0px 10px 0;
+    padding: 7px 10px 7px 10px;
+    border-radius: 100px;
+  }
+
+  .PageHome main .web,
+  .developer {
+    font-size: 50px;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .PageHome main .developer {
+    color: var(--fourth-color);
+  }
+
+  .PageHome main .network {
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+  }
+
+  .PageHome main .info {
+    font-size: 15px;
+    width: 95%;
+    text-align: justify;
+  }
+
+  .PageHome main .language button {
+    margin: 15px 15px 10px 0;
+    padding: 7px 10px 7px 10px;
+    border-radius: 100px;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    border: none;
+    box-shadow: 0 0 1px var(--third-color);
+  }
+
+  .PageHome main .btnHome button {
+    margin: 10px 15px 10px 0;
+    padding: 7px 10px 7px 10px;
+
+    border-radius: 6px;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    border: none;
+    box-shadow: 0 30px 80px var(--fourth-color);
+  }
+
+  .PageHome main .btnHome .btnContact {
+    padding: 7px 25px 7px 25px;
+  }
+
+  /*
+Fin main
+
+
+
+
+
+*/
+
+  /*
+
+
+
+
+
+Debut footer
+*/
+
+  .PageHome footer {
+    margin: 10px 50px 10px 50px;
+  }
+
+  /*
+Fin footer
+
+
+
+
+
+*/
+
+  /*
+
+
+Page          :        About      ///////////////////////////////////////////////
+
+
+
+*/
+
+  /*
+
+
+
+
+Debut En-tête 
+*/
+
+  .PageAbout header .EnteteMenu .menuAbout {
+    color: var(--fourth-color);
+    border-bottom: 1px solid var(--fourth-color);
+    background-color: var(--second-color);
+  }
+
+  .PageAbout header .EnteteMenu .menuAbout a {
+    border: none;
+  }
+
+  /*
+Fin En_tête
+
+
+
+
+
+*/
+
+  /*
+
+
+
+
+
+Debut main
+*/
+
+  .PageAbout main {
+    margin: 15px 5px 10px 15px;
+  }
+
+  .PageAbout main .maintitre {
+    text-align: center;
+    margin: 0 0 25px 0;
+  }
+
+  .PageAbout main .maintitre h1 {
+    color: var(--fourth-color);
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .PageAbout main .iam {
+    color: var(--fourth-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+
+  .PageAbout .name {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .PageAbout .domaine {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+
+    margin: 10px 0 0 0;
+    width: 95%;
+    line-height: 20px;
+  }
+
+  .PageAbout .btnabout button {
+    margin: 12px 10px 0 0;
+    padding: 7px 10px 7px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--fourth-color);
+  }
+
+  .PageAbout .btnabout .btnDownload {
+    margin: 12px 10px 0 0;
+    border-radius: 10px;
+    border: 1px solid var(--fourth-color);
+
+    padding: 7px 10px 7px 10px;
+
+    color: var(--third-color);
+    background-color: var(--fiveth-color);
+  }
+
+  .PageAbout .btnabout .btnContact {
+    margin: 12px 10px 0 0;
+    border-radius: 10px;
+    border: 1px solid var(--fourth-color);
+
+    padding: 7px 25px 7px 25px;
+
+    color: var(--fourth-color);
+    background-color: var(--first-color);
+  }
+
+  /*
+Fin main
+
+
+
+
+
+*/
+
+  /*
+
+
+
+
+
+Debut section
+*/
+
+  .PageAbout section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 5px 0 5px;
+  }
+
+  .PageAbout section .tprojet,
+  .certificates,
+  .years {
+    padding: 15px;
+    margin: 10px 0px 10px 0px;
+    width: 90%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: var(--second-color);
+  }
+
+  .PageAbout section div div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .PageAbout section div .number {
+    margin-bottom: 50px;
+  }
+
+  .PageAbout section .text h4 .texttwo {
+    display: block;
+  }
+
+  .PageAbout section .number .ico {
+    background-color: var(--first-color);
+    padding: 12px;
+
+    border-radius: 100px;
+  }
+  .PageAbout section .number .num {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .PageAbout section .text .ico {
+    padding-top: 18px;
+  }
+
+  /*
+Fin section
+
+
+
+
+
+*/
+
+  /*
+
+
+
+
+
+Debut footer
+*/
+
+  .PageAbout footer {
+    margin: 20px 50px 10px 50px;
+  }
+
+  /*
+Fin footer
+
+
+
+
+
+*/
+}
