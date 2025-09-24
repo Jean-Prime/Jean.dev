@@ -442,35 +442,52 @@ Fin En_tête
 Debut main
 */
 
-.PageContact main{
-  margin: 100px 0 0 0 ;
+.PageContact main {
+  margin: 40px 0 0 0;
+}
+
+.PageContact main .titre {
+  margin-bottom: 25px;
+}
+
+.PageContact main .container {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .PageContact main a {
   display: flex;
-  justify-content: start;
   gap: 40px;
-  margin: 20px 0 20px 0;
-  align-items: center;
 
+  justify-content: start;
+  align-items: center;
+  padding: 25px 0 25px 60px;
+  margin: 10px 0 10px 0;
+
+  width: 400px;
   color: var(--third-color);
   text-decoration: none;
-  border-top: 1px solid var(--fourth-color);
-  padding: 15px 0 0 50px;
+  border: 1px solid var(--fourth-color);
+  border-radius: 5px;
   cursor: pointer;
+  background-color: var(--second-color);
 }
 
-.PageContact main .whatapp a{
-  border-bottom: 1px solid var(--fourth-color);
-  padding-bottom: 15px;
-}
-
-
-
-.PageContact main span, p{
+.PageContact main span,
+p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.PageContact main p {
+  color: var(--fourth-color);
+}
+
+.PageContact main .icone{
+  font-size: 60px;
+  padding-bottom: 10px;
+}
 /*
 Fin main
 
@@ -931,7 +948,7 @@ Page          :        Contact      ////////////////////////////////////////////
 Debut En-tête 
 */
 
-  .PageContact header .menuEN .divcontact button {
+  .PageContact header .EnteteMenu .menuContact button {
     color: var(--fourth-color);
     padding: 5px 10px 5px 10px;
     border-radius: 100px;
@@ -944,6 +961,66 @@ Fin En_tête
 
 
 
+
+
+*/
+
+  /*
+
+
+
+
+
+Debut main
+*/
+
+  .PageContact main {
+    margin: 30px 0 0 0;
+  }
+
+  .PageContact main .titre {
+    margin-bottom: 25px;
+  }
+
+  .PageContact main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PageContact main a {
+    font-size: 16px;
+    display: flex;
+    gap: 30px;
+
+    justify-content: start;
+    align-items: center;
+    padding: 25px 0 25px 60px;
+    margin: 10px 0 10px 0;
+
+    width: 280px;
+    color: var(--third-color);
+    text-decoration: none;
+    border: 1px solid var(--fourth-color);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--second-color);
+  }
+
+  .PageContact main span,
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .PageContact main p {
+    color: var(--fourth-color);
+  }
+.PageContact main .icone{
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+  /*
+Fin main
 
 
 */
