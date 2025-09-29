@@ -484,7 +484,7 @@ p {
   color: var(--fourth-color);
 }
 
-.PageContact main .icone{
+.PageContact main .icone {
   font-size: 60px;
   padding-bottom: 10px;
 }
@@ -517,7 +517,7 @@ Fin main
   }
 
   header {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 1px 0px 1px;
     display: inline;
   }
 
@@ -569,7 +569,7 @@ Fin main
 
   .EnteteMenu a {
     text-decoration: none;
-    padding: 5px 180px 5px 180px;
+    padding: 5px 150px 5px 150px;
     color: var(--third-color);
     font-family: "Times New Roman", Times, serif;
   }
@@ -641,7 +641,7 @@ Debut main
     box-shadow: 0 0 100px var(--fourth-color);
     border: none;
 
-    margin: 0px 0px 10px 0;
+    margin: 0px 0 10px 0;
     padding: 7px 10px 7px 10px;
     border-radius: 100px;
   }
@@ -948,7 +948,7 @@ Page          :        Contact      ////////////////////////////////////////////
 Debut En-tête 
 */
 
-  .PageContact header .EnteteMenu .menuContact button {
+  .PageContact header .menuEN .divcontact button {
     color: var(--fourth-color);
     padding: 5px 10px 5px 10px;
     border-radius: 100px;
@@ -1015,10 +1015,10 @@ Debut main
   .PageContact main p {
     color: var(--fourth-color);
   }
-.PageContact main .icone{
-  font-size: 40px;
-  padding-bottom: 5px;
-}
+  .PageContact main .icone {
+    font-size: 40px;
+    padding-bottom: 5px;
+  }
   /*
 Fin main
 
